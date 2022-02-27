@@ -34,9 +34,11 @@ if(isset($_GET['id'])){
     <ol>
         <?php echo $list; ?>
     </ol>
-    <a href="/create.php">create</a>
-    <h2><?=$toshow['title']?></h2>
-    <?=$toshow['description']?>
+    <form action="/create_process.php" method="POST">
+        <p><input type="text" placeholder="Title" name="title" /></p>
+        <p><textarea name="desc" placeholder="Description"></textarea></p>
+        <p><input type="submit"></input></p>
+    </form>
 </body>
 
 </html>

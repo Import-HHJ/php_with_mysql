@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PHP with mysql</title>
   </head>
+
   <body>
     <h1>Web</h1>
     <ol>
       <li>HTML</li>
     </ol>
-    <h2>Welcome</h2>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus culpa libero
-    ipsum, incidunt, a necessitatibus in ullam voluptatum atque iure, possimus
-    officiis sed natus harum perferendis eum. Blanditiis, cum ducimus.
+    <form action="/create_process.php">
+      <p><input type="text" placeholder="Title" name="title" /></p>
+      <p><textarea name="desc" placeholder="Description"></textarea></p>
+      <p><button type="submit"></button></p>
+    </form>
   </body>
 </html>
